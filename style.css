@@ -331,7 +331,7 @@ footer {
 
 
 @media screen and (max-width: 970px) {
-    .nav-links {
+   /* .nav-links {
         position: absolute;
         right: 0px;
         height: 100vh;
@@ -347,6 +347,7 @@ footer {
       z-index: 1;
       text-align: center;
     }
+    */
 
     .nav-active {
         transform: translateX(0%);
