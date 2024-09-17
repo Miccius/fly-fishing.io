@@ -352,6 +352,32 @@ footer {
         transform: translateX(0%);
     }
 
+
+  
+    
+    .nav-links {
+        position: fixed;  /* Use fixed positioning so it doesn't push other content */
+        right: 0px;
+        height: 100vh;
+        top: 0;
+        background-color: #47A992;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+        transform: translateX(100%); /* Keep it off-screen */
+        transition: transform 0.5s ease-in-out;
+        z-index: 1;
+        text-align: center;
+        overflow: hidden; /* Prevent content overflow within the nav */
+    }
+    
+    .nav-active {
+        transform: translateX(0); /* Bring the nav back on-screen */
+    }
+    
+
     .menu {
         display: block;
         position: absolute;
