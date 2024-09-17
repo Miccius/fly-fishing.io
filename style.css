@@ -347,6 +347,7 @@ footer {
       z-index: 1;
       text-align: center;
     }
+    
 
     .nav-active {
         transform: translateX(0%);
