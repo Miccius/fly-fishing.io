@@ -7,10 +7,16 @@
 }
 
 
+html {
+
+    width: 100%;
+}
+
 body {
     background-color: #F5EFE6;
     overflow-x: hidden;
     min-height: 100vh;
+    width: 100%;
     
 }
 
@@ -495,6 +501,7 @@ footer {
 
     h2 {
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .footer-h2 h2 {
