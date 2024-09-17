@@ -463,6 +463,15 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+
+    .block {
+        max-width: 80% ;
+       padding: 0 5% 5%;
+       border: 3px solid #B4CDE6;
+       
+    }
+    
+
     .play-video video {
         height: 60vh; /* Make the video take up full height of the viewport */
         width: 100%; 
@@ -487,15 +496,13 @@ footer {
          font-size: 30px;
     }
 
-    h2 {
-        font-size: 20px;
-        margin-bottom: 20px;
-
+    .footer-h2 h2 {
+        margin-bottom: 60px;
     }
 
     main p {
 
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .contacts img {
@@ -506,7 +513,16 @@ footer {
 
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 460px) {
+
+    
+.block {
+    max-width: 90% ;
+   padding: 0 5% 5%;
+   border: 2px solid #B4CDE6;
+   
+}
+
 
     .play-video video {
         height: 55vh; /* Make the video take up full height of the viewport */
@@ -534,7 +550,7 @@ footer {
     }
 
     .footer-h2 h2 {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
 
 
