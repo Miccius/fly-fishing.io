@@ -50,6 +50,7 @@ main {
 
 main p {
     font-family: 'Roboto', sans-serif;
+    
 }
 
      main h3 {
@@ -241,30 +242,35 @@ footer {
 
 }
 .contacts {
-    height:8vh;
+    height:10vh;
     background-color: #628E90;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
-
+.contacts ul {
+    
+    
+    margin: 0%;
+    list-style: none;
+    position: absolute;
+    bottom: 40px;
+    
+}
 
 .contacts img {
+
+    width: 120px;
     filter: invert(100%);
-    width: 8%;
-    margin: 0% 1%;
     transform: scale(0.35);
     transition: 0.5s;
   }
 
   
-.contacts ul {
-    margin: 0%;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    bottom: 0px;
-    
-}
+
 
 .contacts li {
    display: inline;
@@ -307,8 +313,14 @@ footer {
         font-size: 1.5em;
     }
 
-    
+    .contacts img {
+        
+        width: 80px;
+    }
 }
+
+    
+
 
 @media screen and (max-width: 970px) {
     .nav-links {
@@ -404,11 +416,15 @@ footer {
         
         }
 
+
     
-
-
+        
+        .contacts img {
+        
+            width: 100px;
+           
+        }
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -438,8 +454,21 @@ footer {
 
     h2 {
         font-size: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    main p {
+
+        font-size: 20px;
+    }
+
+    .contacts img {
+        
+        width: 80px;
     }
 }
+
 
 
 @media screen and (max-width: 360px) {
@@ -457,10 +486,7 @@ footer {
         height:80%;
     }
 
-    .titles {
-
-        padding:0px 20px 5px 20px;
-    }
+   
 
     h1 {
          margin: 10px;
@@ -476,15 +502,16 @@ footer {
     }
 
 
-   .contacts ul li img {
+    .contacts img {
+       
+        width: 70px;
+     
+        
+      }
+    
+  
 
-     width: 60px;
-     margin: 0;
-    }
 }
-
-
-
 
 
 
