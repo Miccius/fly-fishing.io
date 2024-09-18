@@ -2,6 +2,7 @@
 const menu = document.querySelector('.menu');
 const close = document.querySelector('.close');
 const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links li a'); // Select all links in nav-links
 
 // Function to open the menu
 menu.addEventListener('click', () => {
@@ -17,6 +18,16 @@ close.addEventListener('click', () => {
     navLinks.classList.remove('nav-active'); // Hide the navigation links
     menu.style.display = 'block'; // Show the menu button again
     close.style.display = 'none'; // Hide the close button
+});
+
+// Add event listener to all navigation links to close the menu when clicked
+navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log('Link clicked'); // Log for debugging
+        navLinks.classList.remove('nav-active'); // Hide the navigation links
+        menu.style.display = 'block'; // Show the menu button again
+        close.style.display = 'none'; // Hide the close button
+    });
 });
 
 
